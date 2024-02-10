@@ -7,13 +7,13 @@ export interface IEvent extends Document {
   location?: string;
   createdAt?: Date;
   imageUrl: string;
-  startDateTime?: Date;
-  endDateTime?: Date;
-  price?: string;
-  isFree?: boolean;
+  startDateTime: Date;
+  endDateTime: Date;
+  price: string;
+  isFree: boolean;
   url?: string;
   category?: { _id: string; name: string }; // Use Types.ObjectId if not importing the ICategory interface
-  organizer?: { _id: string; firstName: string; lastName: string }; // Use Types.ObjectId if not importing the IUser interface
+  organizer: { _id: string; firstName: string; lastName: string }; // Use Types.ObjectId if not importing the IUser interface
 }
 
 const EventSchema = new Schema({

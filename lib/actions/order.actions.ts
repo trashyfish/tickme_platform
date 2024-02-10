@@ -45,7 +45,7 @@ export const createOrder = async (order: CreateOrderParams) => {
   try {
     await connectToDatabase();
 
-    const newOrder = Order.create({
+    const newOrder = await Order.create({
       ...order,
       event: order.eventId,
       buyer: order.buyerId,

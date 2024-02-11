@@ -12,7 +12,7 @@ import { handleError } from '@/lib/utils';
 import { connectToDatabase } from '@/lib/database';
 import User from '@/lib/database/models/user.model';
 import Event from '@/lib/database/models/event.model';
-import Category from '@/lib/database/models/category.models';
+import Category from '@/lib/database/models/category.model';
 import { revalidatePath } from 'next/cache';
 
 const populateEvent = async (query: any) => {
